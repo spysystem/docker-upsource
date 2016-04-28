@@ -10,7 +10,7 @@ RUN mkdir -p /home/upsource \
 	&& useradd -u 999 -g upsource -d /home/upsource upsource \
 	&& chown -R upsource:upsource /home/upsource \
 	&& wget -nv http://download.jetbrains.com/upsource/upsource-$UPSOURCE_VERSION.zip \
-	&& unzip upsource-$UPSOURCE_VERSION.zip \
+	&& unzip upsource-$UPSOURCE_VERSION.zip -d /opt/Upsource \
 	&& rm -rf upsource-$UPSOURCE_VERSION.zip \
 	&& chown -R upsource:upsource Upsource
 USER upsource
