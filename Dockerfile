@@ -2,7 +2,7 @@ FROM java:openjdk-8-jre
 
 MAINTAINER Eugene Volchek <evolchek@klika-tech.com>
 
-ENV UPSOURCE_VERSION 3.0.4396
+ENV UPSOURCE_VERSION 3.5.3510
 
 WORKDIR /opt
 RUN	   mkdir -p /home/upsource \
